@@ -15,13 +15,27 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	
+	  <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}">
+
+    <!-- jQuery library -->
+    <script src="{{ asset('assets/bootstrap/js/jquery.min.js') }}"></script>
+
+    <!-- Popper JS -->
+    <script src="{{ asset('assets/bootstrap/js/popper.min.js') }}"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="{{ asset('assets/bootstrap/js/bootstrap.min.js') }}"></script>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+	<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+       <!-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -32,14 +46,14 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+                   <!-- <ul class="navbar-nav mr-auto">
 
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
+                  <!--  <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
-                        @guest
+                      <!--  @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
@@ -70,11 +84,49 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav>-->
+
+
+  <div class="mainContainer-home">
+        <div class="container">
+            <div class="row">
+                <header>
+                    <div class="nav">
+					        <a  href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                        <div class="left">
+                            <div class="nav-bar">
+                                <div class="nav-bar-line nav-bar-line-1"></div>
+                                <div class="nav-bar-line nav-bar-line-2"></div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="ball box">
+                                <i class="fas fa-bell"></i>
+                                <div class="notification"></div>
+                            </div>
+                            <div class="profile box">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+
 
         <main class="py-4">
             @yield('content')
+	</div>
+    </div>
         </main>
     </div>
+	 <script src="{{ asset('assets/js/main.js') }}"></script>
 </body>
 </html>

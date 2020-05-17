@@ -1,0 +1,374 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/**=============================================
+start index1
+=================================================*/
+.mainContainer{
+   padding: 0 5%;
+    /* background-image: url(../images/bg1.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    width: 100%;
+    position: relative;
+}
+.mainContainer .row #back{
+    margin-top: 32px;
+    font-size: 18px;
+}
+.mainContainer .row .welcome{
+    margin-top: 40px;
+}
+.mainContainer .row .text{
+    font-size: 13px;
+}
+.mainContainer .signup-form{
+    position: absolute;
+    /* top: 60%;
+    transform: translateY(-60%); */
+    width: 90%;
+    display: flex;
+    flex-direction:column;
+}
+.mainContainer .signup-form input{
+    background-color: transparent;
+    padding-left: 40px;
+}
+.mainContainer .signup-form .form-group{
+    position: relative;
+}
+
+.mainContainer .signup-form .form-group i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    float: left;
+    margin-left: 4%;
+
+}
+.mainContainer .signup-form .form-group .fa-eye{
+    right: 5%;
+}
+/* .mainContainer .signup-form .h-account{
+    text-align: center;
+} */
+.form-bottom{
+    background-color: transparent;
+    margin-top: 30%;
+}
+.h-account{
+    margin-top: 3%;
+}
+.mainContainer input[type=submit]{
+    background-color: #33c5c5;
+    color: white;
+    text-align: center;
+    width: 90%;
+    /* position: absolute; */
+    /* margin-top: 10%; */
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+    /* left:50%;
+    transform: translateX(-50%); */
+
+}
+/**=============================================
+end index1
+=================================================*/
+/**=============================================
+start index 2
+=================================================*/
+.mainContainer-home{
+    width: 100%;
+    padding: 2% 5%;
+}
+header{
+    width: 100%;
+}
+header .nav{
+    width: 100%;
+    display: flow-root;
+}
+header .nav .left{
+    float: left;
+}
+header .nav .left .nav-bar{
+    height: 50px;
+    width: 50px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    position: relative;
+}
+header .nav .left .nav-bar .nav-bar-line{
+    border-radius: 2px;
+    height: 4px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50% ,0%);
+}
+header .nav .left .nav-bar .nav-bar-line-1{
+    background-color: black;
+    width: 20px;    
+    float: left;
+}
+header .nav .left .nav-bar .nav-bar-line-2{
+    background-color: black;
+    width: 30px;
+    margin-top: 10px;
+}
+header .nav .right{
+    float: right;
+    position: relative;
+    font-size: 30px;
+}
+
+header .nav .right .ball{
+    float: left;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+    color: black;
+    font-size: 30px;
+    position: relative;
+}
+header .nav .right .ball .notification{
+    background-color: blue;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
+header .nav .right .profile{
+    float: right;
+    background: blue;
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+}
+header .nav .right i{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50% ,-50%);
+    left: 50%;
+}
+.mainContainer-home section .text-home{
+    margin-top: 10%;
+}
+.mainContainer-home section .text-home h4{
+    padding: 20px;
+    text-align: center;
+}
+.mainContainer-home section .home-cat{
+    background-color: none;
+    height: 100%;
+    width: 100%;
+    display: flow-root;
+    justify-content: center;
+}
+.mainContainer-home section .home-cat div{
+    height: 170px;
+    width: calc(100% / 2.3);
+    border:1px solid black;
+    float: left;
+    margin: 10px 12px;
+    border-radius: 5px;
+position: relative;    
+}
+.mainContainer-home section .home-cat div:nth-child(1){
+    background-color: green;
+    position: relative;
+}
+.mainContainer-home section .home-cat div:nth-child(2){
+    background-color: orange;
+}
+.mainContainer-home section .home-cat div:nth-child(3){
+    background-color: orange;
+}
+.mainContainer-home section .home-cat div:nth-child(4){
+    background-color: blue;
+}
+
+.mainContainer-home section .home-cat div .box{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 10%;
+
+}
+.mainContainer-home section .home-cat div h4{
+    width: 100%;
+    clear: both;
+    padding-left: 10px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+.choice-categories{
+    background-color: none;
+}
+.choice-categories h3{
+margin-top: 10%;
+}
+.choice-categories div{
+    width:calc(100%/2.2);
+    margin: 5px;
+    float: left;
+    background-color: #f2f2f2;
+    padding:2% 4% ;
+    border: 1px solid thistle;
+}
+.choice-categories i{
+    background-color: black;
+    color: white;
+    font-size:25px;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top:10%;
+    float: left;
+}
+.choice-categories p{
+    color: black;
+    position: relative;
+    left: 10px;
+    font-size: 26px;
+    text-transform: capitalize;
+}
+/**=============================================
+end index 2
+=================================================*/
+/**=============================================
+start Search Here
+=================================================*/
+.search-here{
+    background-color: none;
+    padding:10% ;
+    height: 100vh;
+}
+.search-here .fa-arrow-left{
+    margin-bottom: 20px;
+}
+.search-here .signup-form{
+    display: flow-root;
+    height: 75vh;
+    background-color: none;
+    position: relative;
+}
+.search-here .signup-form .form-group{
+    position: relative;
+    
+}
+.search-here .signup-form .form-group input{
+    padding-left: 30px;
+    border: none;
+    border-bottom: 2px solid cadetblue;
+    border-radius: 0;
+}
+.search-here .signup-form .form-bottom input{
+    background-color: #33c5c5;
+    color: white;
+    text-align: center;
+    width: 90%;
+    /* position: absolute; */
+    /* margin-top: 10%; */
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+}
+.search-here .signup-form .form-group i{
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-right: 1px solid #f2f2f2;
+    padding-right: 5px;
+}
+
+/**=============================================
+end Search Here
+=================================================*/
+/**=============================================
+start fill form
+=================================================*/
+.fill-form-1{
+    height: 100vh;        
+}
+.fill-form-1 .top{
+   background-color: none; 
+    display: flex;
+    font-size: 30px;
+    border-bottom: 2px solid orchid;
+}
+.fill-form-1 .top .fa-bars{
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding-top: 2%;
+}
+.fill-form-1 .top p{
+    text-align: center;
+    width: 60%;
+    float: left;
+}
+.fill-form-1 .top .fa-ellipsis-v{
+    width: 20%;
+    text-align: center;
+    float: right;
+    padding-top: 2%;
+}
+.fill-form-1 .containt .signup-form{
+    background-color: none;
+    width: 100%;
+    padding:5% 10%;
+}
+.fill-form-1 .containt .signup-form .form-group{
+    width: 80%;
+    display: inline-block;
+}
+.fill-form-1 .containt .signup-form .form-group label{
+    font-size: 25px;
+    color: #33c5c5;
+    text-transform: uppercase;
+}
+.fill-form-1 .containt .signup-form .form-group input{
+    border: none;
+    border-bottom: 2px solid orchid;
+    border-radius: 0;
+}
+.fill-form-1 .bottom{
+    width: 100%;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.fill-form-1 .bottom button{
+    width:98%;
+    height:40px;
+    background-color: #33c5c5;
+}
+/**=============================================
+end fill form
+=================================================*/
